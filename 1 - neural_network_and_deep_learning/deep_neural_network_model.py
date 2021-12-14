@@ -1,11 +1,11 @@
 import numpy as np
-from building_deep_neural_network_from_scratch import (
+from util_functions import (
     initialize_parameters_deep,
-    L_model_forward,
     compute_cost,
-    L_model_backward,
     update_parameters
 )
+from forward_propagation import L_model_forward
+from backward_propagation import L_model_backward
 
 
 def L_layer_model(X, Y, layers_dims, learning_rate=0.0075, num_iterations=3000, print_cost=False):
